@@ -1,0 +1,95 @@
+.app {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 8px 15px rgba(2, 19, 62, 0.2);
+  border-radius: 15px;
+  justify-content: center;
+  font-family: 'Alkatra', sans-serif;
+}
+
+.app h1 {
+  font-family: 'Alkatra', sans-serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 36px;
+  width: 100%;
+  text-align: center;
+}
+
+.app__time {
+  font-weight: normal;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.app_information-container {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(92.08deg, #446dff, #4200ff 98.48%), #3f7df6;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 15px rgba(2, 19, 62, 0.2);
+  color: white;
+  padding-bottom: 0;
+}
+
+.app__currency-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+
+.app__currency-container span {
+  margin-right: 30px;
+  font-size: 22px;
+}
+
+.app__currency-values {
+  border: 2px solid #eef1f9;
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  width: 65%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 20px;
+  padding-top: 7px;
+}
+
+.app button {
+  border-radius: 5px;
+  border: none;
+  margin-top: 15px;
+  background-color: #e1e6ed;
+  padding: 10px;
+  color: #3f7df6;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 8px 15px rgba(2, 19, 62, 0.2);
+}
+
+.app__currency-values p:first-of-type {
+  margin-right: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+@media screen and (max-width: 425px) {
+  .app {
+    padding: 15px;
+    margin-top: 15px;
+  }
+}

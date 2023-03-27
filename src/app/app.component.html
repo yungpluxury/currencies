@@ -1,0 +1,55 @@
+<div class="app">
+  <h1>{{ title }}</h1>
+  <span class="app__time">Current time: {{ date | date : 'dd-MM-yyyy' }}, {{ date | date : 'h:mm:ss' }}</span>
+  <div class="app_information-container">
+    <p *ngIf="loading">Loading..</p>
+    <div class="app__currency-container">
+      <span>USD</span>
+      <div class="app__currency-values">
+        <p *ngIf="usd">{{ usd.data.RUB }}</p>
+        <p *ngIf="usd">( {{ usdDiff }} )</p>
+      </div>
+    </div>
+    <div class="app__currency-container">
+      <span>EUR</span>
+      <div class="app__currency-values">
+        <p *ngIf="eur">{{ eur.data.RUB }}</p>
+        <p *ngIf="eur">( {{ eurDiff }} )</p>
+      </div>
+    </div>
+    <div class="app__currency-container">
+      <span>GBP</span>
+      <div class="app__currency-values">
+        <p *ngIf="gbp">{{ gbp.data.RUB }}</p>
+        <p *ngIf="gbp">( {{ gbpDiff }} )</p>
+      </div>
+    </div>
+    <div [class.hidden]="show">
+      <div class="app__currency-container">
+        <span>CNY</span>
+        <div class="app__currency-values">
+          <p *ngIf="cny">{{ cny.data.RUB }}</p>
+          <p *ngIf="cny">( {{ cnyDiff }} )</p>
+        </div>
+      </div>
+      <div class="app__currency-container">
+        <span>JPY</span>
+        <div class="app__currency-values">
+          <p *ngIf="jpy">{{ jpy.data.RUB }}</p>
+          <p *ngIf="jpy">( {{ jpyDiff }} )</p>
+        </div>
+      </div>
+      <div class="app__currency-container">
+        <span>TRY</span>
+        <div class="app__currency-values">
+          <p *ngIf="try">{{ try.data.RUB }}</p>
+          <p *ngIf="try">( {{ tryDiff }} )</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button (click)="onClick()">Show more</button>
+
+</div>
+
+<router-outlet></router-outlet>
