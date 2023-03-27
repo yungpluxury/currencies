@@ -13,24 +13,24 @@ export class CurrencyService {
   ) { }
 
   getUSD(): Observable<ICurrency> {
-    return this.http.get<ICurrency>('https://api.freecurrencyapi.com/v1/latest?apikey=OvMeyhOHCsTpm3ZRWtN9o3pRpAapgJuQUQ7QLTXc&currencies=RUB&base_currency=USD')
+    return this.http.get<ICurrency>('https://api.freecurrencyapi.com/v1/latest?apikey=LTxAp771p01kjO9s2YxMo9DPr02cZymymWQZEKLw&currencies=RUB&base_currency=USD')
   }
   getEUR(): Observable<ICurrency> {
-    return this.http.get<ICurrency>('https://api.freecurrencyapi.com/v1/latest?apikey=OvMeyhOHCsTpm3ZRWtN9o3pRpAapgJuQUQ7QLTXc&currencies=RUB&base_currency=EUR')
+    return this.http.get<ICurrency>('https://api.freecurrencyapi.com/v1/latest?apikey=LTxAp771p01kjO9s2YxMo9DPr02cZymymWQZEKLw&currencies=RUB&base_currency=EUR')
   }
   getGBP(): Observable<ICurrency> {
-    return this.http.get<ICurrency>('https://api.freecurrencyapi.com/v1/latest?apikey=OvMeyhOHCsTpm3ZRWtN9o3pRpAapgJuQUQ7QLTXc&currencies=RUB&base_currency=GBP')
+    return this.http.get<ICurrency>('https://api.freecurrencyapi.com/v1/latest?apikey=LTxAp771p01kjO9s2YxMo9DPr02cZymymWQZEKLw&currencies=RUB&base_currency=GBP')
   }
 
   getCNY(): Observable<ICurrency> {
-    return this.http.get<ICurrency>('https://api.freecurrencyapi.com/v1/latest?apikey=OvMeyhOHCsTpm3ZRWtN9o3pRpAapgJuQUQ7QLTXc&currencies=RUB&base_currency=CNY')
+    return this.http.get<ICurrency>('https://api.freecurrencyapi.com/v1/latest?apikey=LTxAp771p01kjO9s2YxMo9DPr02cZymymWQZEKLw&currencies=RUB&base_currency=CNY')
   }
 
   getJPY(): Observable<ICurrency> {
-    return this.http.get<ICurrency>('https://api.freecurrencyapi.com/v1/latest?apikey=OvMeyhOHCsTpm3ZRWtN9o3pRpAapgJuQUQ7QLTXc&currencies=RUB&base_currency=JPY')
+    return this.http.get<ICurrency>('https://api.freecurrencyapi.com/v1/latest?apikey=LTxAp771p01kjO9s2YxMo9DPr02cZymymWQZEKLw&currencies=RUB&base_currency=JPY')
   }
 
   getTRY(): Observable<ICurrency> {
-    return this.http.get<ICurrency>('https://api.freecurrencyapi.com/v1/latest?apikey=OvMeyhOHCsTpm3ZRWtN9o3pRpAapgJuQUQ7QLTXc&currencies=RUB&base_currency=TRY')
+    return this.http.get<ICurrency>('https://api.freecurrencyapi.com/v1/latest?apikey=LTxAp771p01kjO9s2YxMo9DPr02cZymymWQZEKLw&currencies=RUB&base_currency=TRY')
   }
 }

@@ -75,7 +75,6 @@ export class AppComponent {
     this.loading = false
     this.currencyService.getUSD().subscribe( ( res:ICurrency ) => {
       this.usdDiff = this.usdValue.current - this.usdValue.prev
-      console.log(this.usdValue)
       this.usdValue.current = res.data.RUB
       if (this.usdValue.prev == 0) {
         this.usdValue.prev = res.data.RUB
@@ -86,7 +85,6 @@ export class AppComponent {
     })
     this.currencyService.getEUR().subscribe( ( res:ICurrency ) => {
       this.eurDiff = this.eurValue.current - this.eurValue.prev
-      console.log(this.eurValue)
       this.eurValue.current = res.data.RUB
       if (this.eurValue.prev == 0) {
         this.eurValue.prev = res.data.RUB
@@ -97,7 +95,6 @@ export class AppComponent {
     })
     this.currencyService.getGBP().subscribe( ( res:ICurrency ) => {
       this.gbpDiff = this.gbpValue.current - this.gbpValue.prev
-      console.log(this.gbpValue)
       this.gbpValue.current = res.data.RUB
       if (this.gbpValue.prev == 0) {
         this.gbpValue.prev = res.data.RUB
@@ -108,7 +105,6 @@ export class AppComponent {
     })
     this.currencyService.getCNY().subscribe( ( res:ICurrency ) => {
       this.cnyDiff = this.cnyValue.current - this.cnyValue.prev
-      console.log(this.cnyValue)
       this.cnyValue.current = res.data.RUB
       if (this.cnyValue.prev == 0) {
         this.cnyValue.prev = res.data.RUB
@@ -119,7 +115,6 @@ export class AppComponent {
     })
     this.currencyService.getJPY().subscribe( ( res:ICurrency ) => {
       this.jpyDiff = this.jpyValue.current - this.jpyValue.prev
-      console.log(this.jpyValue)
       this.jpyValue.current = res.data.RUB
       if (this.jpyValue.prev == 0) {
         this.jpyValue.prev = res.data.RUB
@@ -130,7 +125,6 @@ export class AppComponent {
     })
     this.currencyService.getTRY().subscribe( ( res:ICurrency ) => {
       this.tryDiff = this.tryValue.current - this.tryValue.prev
-      console.log(this.tryValue)
       this.tryValue.current = res.data.RUB
       if (this.tryValue.prev == 0) {
         this.tryValue.prev = res.data.RUB
